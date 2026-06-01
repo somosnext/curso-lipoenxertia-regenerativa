@@ -318,6 +318,7 @@ p {
 .section,
 .split,
 .association,
+.venue,
 .investment {
   padding: 7rem 4rem;
 }
@@ -669,6 +670,69 @@ p {
   color: rgba(9, 20, 36, 0.72);
 }
 
+.venue {
+  background: #f4f0e8;
+  color: var(--navy-deep);
+}
+
+.venue-heading {
+  display: grid;
+  gap: 1.2rem 4rem;
+  grid-template-columns: minmax(260px, 0.42fr) minmax(0, 1fr);
+  margin-bottom: 3rem;
+}
+
+.venue-heading .eyebrow {
+  color: var(--gold);
+  grid-column: 1 / -1;
+}
+
+.venue-heading h2 {
+  color: var(--navy-deep);
+  margin: 0;
+}
+
+.venue-heading p {
+  align-self: end;
+  color: rgba(9, 20, 36, 0.66);
+  max-width: 43rem;
+}
+
+.venue-gallery {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.venue-photo {
+  background: var(--navy);
+  border: 1px solid rgba(9, 20, 36, 0.16);
+  min-height: 16rem;
+  overflow: hidden;
+}
+
+.venue-photo-large {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.venue-photo-wide {
+  grid-column: span 2;
+}
+
+.venue-photo img {
+  display: block;
+  height: 100%;
+  min-height: inherit;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+  width: 100%;
+}
+
+.venue-photo:hover img {
+  transform: scale(1.035);
+}
+
 .investment {
   background: var(--navy);
   display: grid;
@@ -830,14 +894,26 @@ p {
   .section,
   .split,
   .association,
+  .venue,
   .investment {
     padding: 5rem 2rem;
   }
 
   .intro-grid,
   .program-grid,
-  .application-columns {
+  .application-columns,
+  .venue-gallery {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .venue-heading {
+    grid-template-columns: 1fr;
+  }
+
+  .venue-photo-large,
+  .venue-photo-wide {
+    grid-column: span 1;
+    grid-row: span 1;
   }
 
   .intro-card {
@@ -934,14 +1010,24 @@ p {
   .section,
   .split,
   .association,
+  .venue,
   .investment {
     padding: 4.2rem 1.25rem;
   }
 
   .intro-grid,
   .program-grid,
-  .application-columns {
+  .application-columns,
+  .venue-gallery {
     grid-template-columns: 1fr;
+  }
+
+  .venue-gallery {
+    gap: 0.75rem;
+  }
+
+  .venue-photo {
+    min-height: 16rem;
   }
 
   .intro-statement {
