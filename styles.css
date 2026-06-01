@@ -1001,11 +1001,17 @@ p {
   }
 
   .hero-media::after {
-    background: none;
+    background:
+      linear-gradient(90deg, rgba(14, 27, 44, 0.88) 0%, rgba(14, 27, 44, 0.72) 42%, rgba(14, 27, 44, 0.18) 70%, rgba(14, 27, 44, 0.02) 100%),
+      linear-gradient(180deg, rgba(14, 27, 44, 0) 0%, rgba(14, 27, 44, 0.16) 42%, rgba(14, 27, 44, 0.72) 78%, var(--navy) 100%);
   }
 
   .hero-media img {
     object-position: center center;
+  }
+
+  .hero-copy {
+    text-shadow: 0 2px 18px rgba(6, 12, 22, 0.72);
   }
 
   .hero-actions,
