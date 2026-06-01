@@ -989,25 +989,24 @@ p {
 
   .hero-copy {
     justify-content: flex-start;
-    max-width: 62%;
-    min-height: 100svh;
-    padding: 15.5rem 1.25rem 3rem;
+    max-width: 100%;
+    min-height: auto;
+    padding: min(34rem, 56svh) 1.25rem 4rem;
   }
 
   .hero-media {
-    bottom: 0;
-    height: 100%;
+    bottom: auto;
+    height: min(34rem, 56svh);
     opacity: 1;
   }
 
   .hero-media::after {
     background:
-      linear-gradient(90deg, rgba(14, 27, 44, 0.88) 0%, rgba(14, 27, 44, 0.72) 42%, rgba(14, 27, 44, 0.18) 70%, rgba(14, 27, 44, 0.02) 100%),
-      linear-gradient(180deg, rgba(14, 27, 44, 0) 0%, rgba(14, 27, 44, 0.16) 42%, rgba(14, 27, 44, 0.72) 78%, var(--navy) 100%);
+      linear-gradient(180deg, rgba(14, 27, 44, 0) 0%, rgba(14, 27, 44, 0.08) 62%, var(--navy) 100%);
   }
 
   .hero-media img {
-    object-position: center center;
+    object-position: center 34%;
   }
 
   .hero-copy {
