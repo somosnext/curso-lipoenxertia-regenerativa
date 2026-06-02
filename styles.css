@@ -1005,7 +1005,7 @@ p {
   }
 
   .hero-media img {
-    content: url("assets/dra-hero-mobile.jpg");
+    content: url("assets/dra-hero-mobile.jpg?v=20260601-1940");
     object-position: center center;
   }
 
