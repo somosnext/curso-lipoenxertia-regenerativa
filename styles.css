@@ -931,8 +931,8 @@ p {
   }
 
   h1 {
-    font-size: clamp(1.9rem, 8.4vw, 2.35rem);
-    line-height: 0.96;
+    font-size: clamp(1.6rem, 7.2vw, 1.9rem);
+    line-height: 1;
     max-width: 100%;
   }
 
@@ -943,8 +943,8 @@ p {
   }
 
   .hero-text {
-    font-size: 0.9rem;
-    line-height: 1.55;
+    font-size: 0.86rem;
+    line-height: 1.48;
     max-width: 20rem;
   }
 
@@ -958,10 +958,10 @@ p {
   }
 
   .hero-copy {
-    justify-content: center;
+    justify-content: flex-start;
     max-width: 48%;
     min-height: 100svh;
-    padding: 5.6rem 0 2rem 0.1rem;
+    padding: 10rem 0 1.5rem 0.1rem;
   }
 
   .hero-media {
@@ -1008,13 +1008,15 @@ p {
     display: flex;
     gap: 1rem;
     justify-content: flex-start;
-    padding-left: 1.9rem;
+    font-size: 0.66rem;
+    line-height: 1.35;
+    padding: 0.6rem 0.65rem 0.6rem 1.55rem;
   }
 
   .hero-meta span::before {
     color: var(--gold);
-    flex: 0 0 1.8rem;
-    font-size: 1.45rem;
+    flex: 0 0 1.35rem;
+    font-size: 1.15rem;
     line-height: 1;
   }
 
@@ -1028,6 +1030,14 @@ p {
 
   .hero-meta span:nth-child(3)::before {
     content: "⌁";
+  }
+
+  .hero-meta {
+    margin: 1.4rem 0 1.2rem;
+  }
+
+  .hero-actions {
+    margin-top: 1.8rem;
   }
 
   .intro-band,
